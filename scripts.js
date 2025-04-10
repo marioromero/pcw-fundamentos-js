@@ -76,6 +76,7 @@ function saludar(name){
 
 
 
+
 let frutas = ["manzana", "pera"]
 //array asociativo
 let frutasAsociativas = {
@@ -90,7 +91,6 @@ let frutasAsociativas = {
 // .slice() devuelve una copia de una parte del array
 // .splice() cambia el contenido de un array eliminando o reemplazando elementos existentes y/o agregando nuevos elementos en su lugar
 // .indexOf() devuelve el primer índice en el que se encuentra un elemento dado en el array, o -1 si no está presente
-
 
 //objeto
 
