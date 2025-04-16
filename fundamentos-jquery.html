@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="cambiar">Cambiar texto</button>
+
+    <h1 id="texto">Este es el texto inicial</h1>
+
+    <form action="">
+        Nombre<input id="nombre" type="text"> <br><br>
+        Password<input type="password"> <br><br>
+        <input id="ingresar" type="submit" value="Ingresar">
+
+    </form>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+
+        $(document).ready(function() {
+
+            let textoJquery = false
+            //alert("jquery Ok")
+            //.click
+            //esto es un selector de jquery, selecciona el elemento con id cambiar
+            $("#cambiar").hover( function(){
+
+                if (!textoJquery) {
+                    $("#texto").text("Texto Cambiado con jquery")
+                    textoJquery = true
+                }
+                else{
+                    $("#texto").text("Cambiar texto")
+                    textoJquery = false
+                }          
+            })
+
+
+            let usuario = {
+                nombre: "Mario",
+                password: "123456",
+                edad: 22
+            }
+
+           $("#ingresar").click( function(e){
+
+                e.preventDefault()
+
+                //declara una var numerica
+                let numero = 10
+                //otra  
+                let numero2 = 20
+                //suma de dos variables
+                let suma = numero + numero2
+
+                //muestrala en u alert
+                console.log("La suma es: " + suma)
+                
+                getName()
+           })
+
+            function getName(){
+     
+                let nombre = $("#nombre").val() 
+                console.log(nombre)
+                //para convertir a entero el valor de un input
+                let edad = parseInt( $("#edad").val() )
+            }
+        })
+    </script>
+</body>
+</html>

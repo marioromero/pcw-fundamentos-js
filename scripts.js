@@ -1,28 +1,30 @@
 // alert("ya estoy cargado")
 
 /*
-
 lineas comentadas
 lineas comentadas
-
 */
+let laedad = 5.3
 
-let edad = 10
+let edad = laedad
 var saludo = "hola"
+
 let esActivo = true
 
 const DATABASE = "mi-base-de-datos"
 const PASSWORD_BD = "DSFDG"
+const NUMERO = 5
+const ENVIRONMENT = "dev"
 
 // Operadores
 // + , -, /, *, %, ==, ===, ||, &&, !, !=, !==   
 
 //Estructuras de control
-a = 1
-b = 1
-c = 3
+let a = 1
+let b = "1"
+let c = 3
 
-if(a == b){
+if(a === b){
 
     if(a > c)
     {
@@ -84,6 +86,8 @@ let frutasAsociativas = {
     "nombre2": "pera",
     "nombre3": "naranja"
 }
+
+frutas.push("sandía")
 //.push() //agrega un elemento al final del array
 // .pop() elimina el ultijmo
 // .shift agrega elemento al inicio
